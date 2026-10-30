@@ -2,11 +2,21 @@
 > *A playful, interactive digital showcase bridging the art of comic aesthetics with modern web engineering.*
 
 <p align="center">
+  <a href="https://mayursingh.xyz/" target="_blank">
+    <img src="https://img.shields.io/badge/Live%20Website-mayursingh.xyz-22d3a0?style=for-the-badge&logo=google-chrome&logoColor=1b1b2f" alt="Live Website"/>
+  </a>
+  <a href="https://aboutmayur.netlify.app/" target="_blank">
+    <img src="https://img.shields.io/badge/Netlify%20Mirror-aboutmayur.netlify.app-00C7B7?style=for-the-badge&logo=netlify&logoColor=white" alt="Netlify Mirror"/>
+  </a>
   <img src="https://img.shields.io/badge/Status-Live%20%26%20Active-5be3a0?style=for-the-badge&logo=statuspage&logoColor=1b1b2f" alt="Status"/>
   <img src="https://img.shields.io/badge/Author-Mayur%20Singh-ffd93d?style=for-the-badge&logo=codeforces&logoColor=1b1b2f" alt="Author"/>
   <img src="https://img.shields.io/badge/Specialization-AI%20%26%20ML%20Engineer-a78bfa?style=for-the-badge&logo=python&logoColor=white" alt="Specialization"/>
   <img src="https://img.shields.io/badge/Institute-SRMCEM%20Lucknow-ff6b9d?style=for-the-badge&logo=google-classroom&logoColor=white" alt="Institute"/>
   <img src="https://img.shields.io/badge/License-MIT-7dd3fc?style=for-the-badge&logo=opensourceinitiative&logoColor=1b1b2f" alt="License"/>
+</p>
+
+<p align="center">
+  🌐 <b>Production Website:</b> <a href="https://mayursingh.xyz/" target="_blank"><b>https://mayursingh.xyz/</b></a> &nbsp;•&nbsp; ⚡ <b>Mirror Deployment:</b> <a href="https://aboutmayur.netlify.app/" target="_blank"><b>https://aboutmayur.netlify.app/</b></a>
 </p>
 
 ---
@@ -243,16 +253,18 @@ npx serve .
 
 ---
 
-## Chapter 9: Deployment & Maintenance
+## Chapter 9: Deployment & Infrastructure
 
-### Deploying via GitHub Pages
-1. Navigate to your repository settings: `https://github.com/mayursingh24/Portfolio/settings/pages`.
-2. Under **Build and deployment > Source**, select **Deploy from a branch**.
-3. Choose branch `main` and folder `/ (root)`.
-4. Click **Save**. Within 60 seconds, your portfolio is live globally at:
-   ```
-   https://mayursingh24.github.io/Portfolio/
-   ```
+The portfolio is deployed and continuously delivered across multiple cloud endpoints:
+
+| Infrastructure | Live URL | Description |
+| :--- | :--- | :--- |
+| **🌐 Custom Primary Domain** | [**https://mayursingh.xyz/**](https://mayursingh.xyz/) | Primary high-availability production domain with SSL |
+| **⚡ Netlify Edge CDN** | [**https://aboutmayur.netlify.app/**](https://aboutmayur.netlify.app/) | Automated edge deployment & fast global distribution |
+| **🚀 GitHub Pages** | [**https://mayursingh24.github.io/Portfolio/**](https://mayursingh24.github.io/Portfolio/) | Upstream repository branch deployment with root `CNAME` binding |
+
+### Custom Domain Binding (`CNAME`)
+The repository contains a top-level `CNAME` configuration pointing to `mayursingh.xyz`. DNS A/AAAA and ALIAS records point to the host CDN while preserving the custom branded domain.
 
 ---
 
@@ -261,6 +273,9 @@ npx serve .
 Have a project idea, hackathon collaboration, or internship opportunity?
 
 <p align="center">
+  <a href="https://mayursingh.xyz/" target="_blank">
+    <img src="https://img.shields.io/badge/Website-mayursingh.xyz-22d3a0?style=for-the-badge&logo=google-chrome&logoColor=1b1b2f" alt="Website"/>
+  </a>
   <a href="mailto:Mayur4singhhh@gmail.com">
     <img src="https://img.shields.io/badge/Email-Mayur4singhhh%40gmail.com-ffd93d?style=for-the-badge&logo=gmail&logoColor=1b1b2f" alt="Email"/>
   </a>
