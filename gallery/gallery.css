@@ -1,9 +1,28 @@
-/* gallery.css - existing gallery rules (verbatim copy; also kept in ../css/style.css) */
-.gal{display:grid;gap:1.8rem;grid-template-columns:repeat(auto-fill,minmax(min(100%,15rem),1fr))}
-.polaroid{margin:0;background:#fff;border:4px solid var(--ink);border-radius:8px;box-shadow:6px 6px 0 var(--ink);padding:.7rem .7rem .5rem;cursor:pointer;transition:transform .25s cubic-bezier(.3,1.8,.5,1)}
-.polaroid:nth-child(odd){transform:rotate(-2.5deg)}.polaroid:nth-child(even){transform:rotate(2deg)}
-.polaroid:hover{transform:rotate(0) scale(1.05)}
-.polaroid img,.ph{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;object-position:center 20%;border:3px solid var(--ink);border-radius:4px}
+/* gallery.css - responsive gallery grid and polaroid styling */
+.gal{
+  display:grid;
+  gap:clamp(1.2rem,2.5vw,1.8rem);
+  grid-template-columns:1fr;
+}
+@media(min-width:34rem){.gal{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:58rem){.gal{grid-template-columns:repeat(3,1fr)}}
+
+.polaroid{
+  margin:0;background:#fff;border:4px solid var(--ink);border-radius:10px;box-shadow:6px 6px 0 var(--ink);
+  padding:.7rem .7rem .5rem;cursor:pointer;transition:transform .25s cubic-bezier(.3,1.8,.5,1)
+}
+.polaroid:nth-child(odd){transform:rotate(-1deg)}.polaroid:nth-child(even){transform:rotate(1deg)}
+@media(min-width:48rem){
+  .polaroid:nth-child(odd){transform:rotate(-2.5deg)}.polaroid:nth-child(even){transform:rotate(2deg)}
+  .polaroid:hover{transform:rotate(0) scale(1.05);z-index:2}
+}
+.polaroid img,.ph{
+  display:block;width:100%;aspect-ratio:4/3;object-fit:cover;object-position:center 20%;
+  border:3px solid var(--ink);border-radius:6px
+}
 .ph{display:grid;place-items:center;font-size:3.4rem}
 .ph span{filter:drop-shadow(3px 3px 0 var(--ink))}
-.polaroid figcaption{font:400 1.25rem Bangers,sans-serif;letter-spacing:.05em;text-align:center;padding-top:.5rem;color:var(--ink)}
+.polaroid figcaption{
+  font:400 clamp(1.1rem,2vw,1.25rem) Bangers,sans-serif;letter-spacing:.05em;text-align:center;
+  padding-top:.5rem;color:var(--ink)
+}
